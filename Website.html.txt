@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Website Welcome Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our News Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">World News</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Top Stories</h2>
+      <article>
+        <h3>Headline 1</h3>
+        <p>Summary of the first news story goes here.</p>
+        <a href="#">Read More</a>
+      </article>
+      <article>
+        <h3>Headline 2</h3>
+        <p>Summary of the second news story goes here.</p>
+        <a href="#">Read More</a>
+      </article>
+      <article>
+        <h3>Headline 3</h3>
+        <p>Summary of the third news story goes here.</p>
+        <a href="#">Read More</a>
+      </article>
+    </section>
+    <section>
+      <h2>Popular News</h2>
+      <ul>
+        <li><a href="#">News item 1</a></li>
+        <li><a href="#">News item 2</a></li>
+        <li><a href="#">News item 3</a></li>
+        <li><a href="#">News item 4</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 News Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
