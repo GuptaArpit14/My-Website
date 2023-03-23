@@ -10,8 +10,8 @@ form.addEventListener('submit', async (event) => {
   const hobbies = form.hobbies.value;
   const budget = parseInt(form.budget.value);
 
-  // Send form data to backend API
-  const response = await fetch('/api/recommendations', {
+  // Send form data to GPT-3 API
+  const response = await fetch('/api/gpt3', {
     method: 'POST',
     body: JSON.stringify({
       age,
@@ -30,16 +30,16 @@ form.addEventListener('submit', async (event) => {
     return;
   }
 
-  const recommendations = await response.json();
+  const { data } = await response.json();
 
-  if (recommendations.length === 0) {
+  if (data.length === 0) {
     recommendationsDiv.innerHTML = '<p>No recommendations found. Please adjust your criteria and try again.</p>';
     return;
   }
 
   const recommendationList = document.createElement('ul');
 
-  for (const recommendation of recommendations) {
+  for (const recommendation of data) {
     const recommendationItem = document.createElement('li');
     const recommendationLink = document.createElement('a');
     recommendationLink.href = recommendation.link;
